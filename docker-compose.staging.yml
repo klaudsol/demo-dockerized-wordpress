@@ -11,7 +11,7 @@ services:
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
     volumes:
-      - ./.htaccess-staging:/var/www/html/.htaccess
+      - ./wp-config.php:/var/www/html/wp-config.php
 
   db:
     image: mysql:5.7
