@@ -10,8 +10,6 @@ services:
       WORDPRESS_DB_USER: exampleuser
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
-    volumes:
-      - ./.htaccess-staging:/var/www/html/.htaccess
 
   db:
     image: mysql:5.7
